@@ -20,6 +20,13 @@ const projects = [
         description: "A flight odering web app",
         link: "https://mq-flight-booking-app.vercel.app/",
     },
+    {
+        id: "4",
+        image:"src/assets/images/Screenshot (158).png",
+        title: "loop-studios",
+        description: "A simple mobile responsive landing page",
+        link: "https://loop-studios-plum-kappa.vercel.app/",
+    },
 ];
 
 export default projects;

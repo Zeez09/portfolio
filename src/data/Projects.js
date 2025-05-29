@@ -27,6 +27,13 @@ const projects = [
         description: "A simple mobile responsive landing page",
         link: "https://loop-studios-plum-kappa.vercel.app/",
     },
+    {
+        id: "5",
+        image:"src/assets/images/Screenshot (159).png",
+        title: "zedtunes",
+        description: "A music playing web app",
+        link: "https://zedtunes.netlify.app/",
+    },
 ];
 
 export default projects;

@@ -3,6 +3,7 @@ import image2 from "../assets/images/Screenshot (133).png";
 import image3 from "../assets/images/Screenshot (139).png";
 import image4 from "../assets/images/Screenshot (158).png";
 import image5 from "../assets/images/Screenshot (159).png";
+import image6 from "../assets/images/Screenshot (207).png";
 
 
 
@@ -43,6 +44,14 @@ const projects = [
         title: "zedtunes",
         description: "A music playing web app",
         link: "https://zedtunes.netlify.app/",
+    },
+
+    {
+        id: "6",
+        image: image6,
+        title: "finsweet",
+        description: "A simple static multipage website",
+        link: "https://finsweet-navy.vercel.app/",
     },
 ];
 

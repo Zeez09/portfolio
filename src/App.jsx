@@ -237,13 +237,14 @@ useEffect(() => {
       <img src={linkedin} alt="LinkedIn" className="h-5 w-5 transition duration-300 hover:scale-125 hover:cursor-pointer" /></a>
     </div>
 
-    <a
-  href="/HARUNA ABDULAZEEZ OLORUNFEMI  updated.pdf"
+<a
+  href="/HARUNA ABDULAZEEZ OLORUNFEMI updated.pdf"
   download
-  className="bg-violet-600 text-white px-4 py-2 rounded-lg hover:bg-violet-700 transition mt-25"
+  className="bg-violet-600 text-white px-4 py-2 sm:px-6 sm:py-3 text-sm sm:text-base font-medium rounded-lg hover:bg-violet-700 transition-all duration-300 mt-6 inline-block text-center w-full sm:w-auto"
 >
   📄 Download Resume
 </a>
+
 
   </div>
 </section>

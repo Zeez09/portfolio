@@ -27,8 +27,8 @@ const App = () => {
   const dynamicItems = [
     'an Enthusiastic Dev',
     'a software Developer',
-    'a Front End Developer',
-    'a ReactJs|React Native Developer',
+    'a mobile App Developer',
+    'a React Native Developer',
     
     
   ];
@@ -209,7 +209,7 @@ useEffect(() => {
 
 
 
-     <section className="w-full min-h-[40vh] sm:min-h-[45vh] lg:min-h-screen flex justify-center items-center bg-[#1e1e1e]">
+     <section className="w-full min-h-[50vh] sm:min-h-[55vh] lg:min-h-screen flex justify-center items-center bg-[#1e1e1e]">
 
   <div className="text-center p-6 w-full max-w-2xl">
     <h1 className="text-xl md:text-3xl font-bold">Hey there, I'm Haruna Abdulazeez</h1>
@@ -218,7 +218,7 @@ useEffect(() => {
       I am a software developer who crafts scalable web applications with HTML, CSS,
       React, and JavaScript — focusing on clean code, efficient solutions, and seamless user experiences.
     </p>
-    <div className="flex flex-row justify-center gap-3 mt-4">
+    <div className="flex flex-row justify-center gap-3 mt-4 mb-10">
       <a href="https://x.com/Zeez_IV"
     target="blank"
     rel="noopener noreferrer">
@@ -236,6 +236,15 @@ useEffect(() => {
     rel="noopener noreferrer">
       <img src={linkedin} alt="LinkedIn" className="h-5 w-5 transition duration-300 hover:scale-125 hover:cursor-pointer" /></a>
     </div>
+
+    <a
+  href="/HARUNA ABDULAZEEZ OLORUNFEMI  updated.pdf"
+  download
+  className="bg-violet-600 text-white px-4 py-2 rounded-lg hover:bg-violet-700 transition mt-25"
+>
+  📄 Download Resume
+</a>
+
   </div>
 </section>
 
@@ -250,10 +259,7 @@ useEffect(() => {
   <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-4xl mx-auto">
     
     <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left max-w-3xl mx-auto px-4">
-  I'm a highly motivated and innovative frontend web developer, passionate about developing and creating
-  web solutions for industries and individuals alike. I have excellent troubleshooting and communication skills —
-  I help make connections between products, businesses, and end-users. I bring prototypes to life by employing
-  best practices to ensure the final product stays true to the vision.
+  I’m a passionate and innovative software developer dedicated to building intuitive and impactful web solutions. I transform ideas into user-focused products through clean code, creativity, and attention to detail.
 </p>
 
   <div className="">

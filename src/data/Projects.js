@@ -58,7 +58,7 @@ const projects = [
         id: "7",
         image: image7,
         title: "Delish",
-        description: "A food web appA modern food ordering and blog website that allows users to explore meals, place orders, and read engaging food-related articles.",
+        description: "A modern food ordering and blog website.",
         link: "https://delish-five.vercel.app/"
     },
 ];

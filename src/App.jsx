@@ -211,7 +211,7 @@ useEffect(() => {
 
      <section className="w-full min-h-[50vh] sm:min-h-[55vh] lg:min-h-screen flex justify-center items-center bg-[#1e1e1e]">
 
-  <div className="text-center p-6 w-full max-w-2xl">
+  <div className="text-center p-6 w-full max-w-5xl">
     <h1 className="text-xl md:text-3xl font-bold">Hey there, I'm Haruna Abdulazeez</h1>
     <h2 className="text-xl font-bold animate-pulse">{constantItem} {dynamicItems[currentItem]}</h2>
     <p className="text-base sm:text-lg text-gray-300">
@@ -259,7 +259,7 @@ useEffect(() => {
   <h1 className="text-2xl md:text-7xl font-bold"> About</h1>
   <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-4xl mx-auto">
     
-    <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left max-w-3xl mx-auto px-4">
+    <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left max-w-4xl mx-auto px-4">
   I’m a passionate and innovative software developer dedicated to building intuitive and impactful web solutions. I transform ideas into user-focused products through clean code, creativity, and attention to detail.
 </p>
 

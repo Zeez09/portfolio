@@ -91,7 +91,7 @@ useEffect(() => {
 
   return (
     <>
-    <div className="flex flex-col min-h-screen bg-[#1e1e1e] text-white overflow-x-hidden p-20">
+    <div className="flex flex-col bg-[#1e1e1e] text-white overflow-x-hidden p-20">
       <div className="flex items-center justify-between w-full relative sm:justify-center">
       <nav className={`mt-2 fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-black border
     border-gray-800 rounded-full px-6 py-3 w-full max-w-[600px] backdrop-blur-md shadow-lg
@@ -209,21 +209,37 @@ useEffect(() => {
 
 
 
-      <section className="w-full min-h-screen flex justify-center items-center bg-[#1e1e1e]">
-        <div className="text-center p-6 w-full max-w-2xl">
-        <h1 className="text-2xl md:text-4xl font-bold">Hey there, I'm Haruna Abdulazeez</h1>
-          <h2 className="text-xl font-bold animate-pulse">{constantItem} {dynamicItems[currentItem]}</h2>
-          <p className="text-base sm:text-lg text-gray-300">I am a software developer who crafts scalable web applications with HTML, CSS,
-            React, and JavaScript — focusing on clean code, efficient solutions, and seamless user experiences.</p>
-            <div className="flex flex-row justify-center gap-3">
-              <img src={twitter} alt="" className="h-5 w-5" />
-              <img src={github} alt="" className="h-5 w-5" />
-              <img src={linkedin} alt="" className="h-5 w-5" />
-            </div>
+     <section className="w-full min-h-[40vh] sm:min-h-[45vh] lg:min-h-screen flex justify-center items-center bg-[#1e1e1e]">
+
+  <div className="text-center p-6 w-full max-w-2xl">
+    <h1 className="text-xl md:text-3xl font-bold">Hey there, I'm Haruna Abdulazeez</h1>
+    <h2 className="text-xl font-bold animate-pulse">{constantItem} {dynamicItems[currentItem]}</h2>
+    <p className="text-base sm:text-lg text-gray-300">
+      I am a software developer who crafts scalable web applications with HTML, CSS,
+      React, and JavaScript — focusing on clean code, efficient solutions, and seamless user experiences.
+    </p>
+    <div className="flex flex-row justify-center gap-3 mt-4">
+      <a href="https://x.com/Zeez_IV"
+    target="blank"
+    rel="noopener noreferrer">
+      <img src={twitter} alt="Twitter" className="h-5 w-5 transition duration-300 hover:scale-125" />
+      </a>
+
+      <a href="https://github.com/Zeez09"
+    target="blank"
+    rel="noopener noreferrer">
+      <img src={github} alt="GitHub" className="h-5 w-5 transition duration-300 hover:scale-125" />
+      </a>
+
+      <a href="https://www.linkedin.com/in/haruna-abdulazeez/"
+    target="blank"
+    rel="noopener noreferrer">
+      <img src={linkedin} alt="LinkedIn" className="h-5 w-5 transition duration-300 hover:scale-125 hover:cursor-pointer" /></a>
+    </div>
   </div>
 </section>
 
-<section id="portfolio" className="leading-12">
+<section id="portfolio" className="leading-12 ">
 <h1 className="text-2xl md:text-7xl font-bold mb-10">Portfolio</h1>
   <Projects />
 </section>
@@ -233,15 +249,15 @@ useEffect(() => {
   <h1 className="text-2xl md:text-7xl font-bold"> About</h1>
   <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-4xl mx-auto">
     
-    <p className="text-base sm:text-lg text-gray-300 text-center md:text-left leading-relaxed">
-      "I'm a highly motivated and innovative frontend web developer,<br />
-  passionate about developing and creating web solutions for industry<br />
-  and individuals alike. I have an excellent trouble shooting and communication skills,<br />
-  I help make connections between products, businesses and end-users. Bringing prototype to working<br />
-  solution, employing the best practices to making sure the prototype and the product are as close as can be<br />
-  "</p>
+    <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left max-w-3xl mx-auto px-4">
+  I'm a highly motivated and innovative frontend web developer, passionate about developing and creating
+  web solutions for industries and individuals alike. I have excellent troubleshooting and communication skills —
+  I help make connections between products, businesses, and end-users. I bring prototypes to life by employing
+  best practices to ensure the final product stays true to the vision.
+</p>
+
   <div className="">
-    <img src={avatar} alt="" className="w-[120px] h-[160px] rounded-2xl object-cover"/>
+    <img src={avatar} alt="" className="w-42 h-38 rounded-full object-cover"/>
   </div>
 
   </div>
@@ -254,13 +270,16 @@ useEffect(() => {
   <section id="contact" className="leading-loose">
   <div className="w-full px-4 py-12 leading-loose">
   <h1 className="text-2xl md:text-7xl font-bold"> Say hello</h1>
-  <h3 className="text-2xl">
+  <h3 className="text-2xl mt-5">
     Have any project in mind? shoot me a message let's work
   </h3>
 
   <div className="flex flex-col sm:flex-row justify-between items-center gap-10 sm:gap-20 mt-20 px-4 text-center sm:text-left">
     <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank" rel= "noopener noreferrer"> 
-    <h1 className="text-gray-500 hover:text-white transition duration-300 text-3xl">Harunaabdulazeez766@gmail.com</h1>
+    <h1 className="text-sm sm:text-base md:text-2xl lg:text-3xl text-gray-500 hover:text-white transition duration-300 break-words text-center md:text-left">
+  Harunaabdulazeez766@gmail.com
+</h1>
+
     </a>
 
     <div className="flex flex-col sm:flex-row gap-5">
@@ -276,7 +295,11 @@ useEffect(() => {
     <img src={whatsApp} alt="" className="w-10 h-10 transition duration-300 hover:scale-125" />
     </a>
 
-    <img src={linkedin} alt="" className="w-10 h-10 transition duration-300 hover:scale-125" />
+    <a href="https://www.linkedin.com/in/haruna-abdulazeez/"
+    target="blank"
+    rel="noopener noreferrer">
+      <img src={linkedin} alt="" className="w-10 h-10 transition duration-300 hover:scale-125" />
+    </a>
 
     <a href="https://github.com/Zeez09"
     target="blank"

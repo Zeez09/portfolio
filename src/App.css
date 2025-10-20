@@ -2,3 +2,12 @@
 html {
     scroll-behavior: smooth;
 }
+
+/* Hide horizontal scrollbar globally (used by .no-scrollbar) */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}

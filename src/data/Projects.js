@@ -4,6 +4,7 @@ import image3 from "../assets/images/Screenshot (139).png";
 import image4 from "../assets/images/Screenshot (158).png";
 import image5 from "../assets/images/Screenshot (159).png";
 import image6 from "../assets/images/Screenshot (207).png";
+import image7 from "../assets/images/Screenshot (208).png";
 
 
 
@@ -52,6 +53,13 @@ const projects = [
         title: "finsweet",
         description: "A simple static multipage website",
         link: "https://finsweet-navy.vercel.app/",
+    },
+    {
+        id: "7",
+        image: image7,
+        title: "Delish",
+        description: "A food web appA modern food ordering and blog website that allows users to explore meals, place orders, and read engaging food-related articles.",
+        link: "https://delish-five.vercel.app/"
     },
 ];
 

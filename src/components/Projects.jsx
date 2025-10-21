@@ -18,7 +18,7 @@ const Projects = () => {
   };
 
   return (
-    <section className="w-full bg-[#0b0b0b] text-white py-14 px-3 sm:px-10 relative overflow-hidden rounded-2xl shadow-[0_0_30px_5px_rgba(139,92,246,0.3)]">
+<section className="w-full bg-[#0b0b0b] text-white py-6 px-3 sm:py-10 sm:px-8 md:py-14 md:px-10 relative overflow-hidden rounded-xl md:rounded-2xl shadow-[0_0_15px_2px_rgba(139,92,246,0.3)] md:shadow-[0_0_30px_5px_rgba(139,92,246,0.3)]" >
       <div className="max-w-6xl mx-auto space-y-12 relative">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-10 bg-gradient-to-r from-violet-400 to-amber-300 bg-clip-text text-transparent">
           My Projects
@@ -52,7 +52,7 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className="snap-center min-w-[80%] sm:min-w-[55%] md:min-w-[40%] bg-gradient-to-br from-zinc-900/90 to-zinc-800/60 backdrop-blur-md rounded-xl border border-zinc-700/40 shadow-lg hover:shadow-violet-500/20 p-3 sm:p-5 flex-shrink-0 transition-all duration-500 hover:-translate-y-2 hover:border-violet-400/40"
+                className="snap-center min-w-[70%] sm:min-w-[45%] md:min-w-[30%] bg-gradient-to-br from-zinc-900/90 to-zinc-800/60 backdrop-blur-md rounded-xl border border-zinc-700/40 shadow-lg hover:shadow-violet-500/20 p-3 sm:p-5 flex-shrink-0 transition-all duration-500 hover:-translate-y-2 hover:border-violet-400/40"
               >
                 <img
                   src={project.image}

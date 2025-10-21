@@ -29,7 +29,7 @@ const projects = [
         id: "3",
         image: image3,
         title: "MQ-flight-booking-app",
-        description: "A flight odering web app",
+        description: "A flight booking web app",
         link: "https://mq-flight-booking-app.vercel.app/",
     },
     {

@@ -9,6 +9,8 @@ import linkedin from "./assets/images/icons8-linkedin-48.png";
 import Projects from "../src/components/Projects";
 import avatar from "./assets/images/medium-shot-anime-style-man-portrait.jpg";
 import whatsApp from "./assets/images/icons8-whatsapp-50.png";
+import ContactForm from "./components/ContactForm";
+
 
 
 
@@ -86,6 +88,9 @@ useEffect(() => {
   window.addEventListener("scroll", handleScroll);
   return () => window.removeEventListener("scroll", handleScroll);
 }, [lastScrollY]);
+
+
+
   
 
 
@@ -93,12 +98,13 @@ useEffect(() => {
     <>
     <div className="flex flex-col bg-[#1e1e1e] text-white overflow-x-hidden p-20">
       <div className="flex items-center justify-between w-full relative sm:justify-center">
-      <nav className={`mt-2 fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-black border
-    border-gray-800 rounded-full px-6 py-3 w-full max-w-[600px] backdrop-blur-md shadow-lg
-     transition-all duration-300 ease-in-out ${showNavbar ? 'opacity-100 visible scale-100' : 'opacity-0 invisible scale-95'}`}>
+      <nav className={`fixed top-9 left-1/2 transform -translate-x-1/2 z-50 bg-black border border-gray-800 rounded-full
+px-4 py-2 sm:px-6 sm:py-3 w-[90%] sm:w-full max-w-[600px] backdrop-blur-md shadow-lg transition-all duration-300 ease-in-out
+${showNavbar ? 'opacity-100 visible scale-100' : 'opacity-0 invisible scale-95'}`}>
+
 
 {/* mobile */}
-          <div className="flex w-full items-center justify-between sm:hidden py-3 px-6">
+          <div className="flex w-full items-center justify-between sm:hidden p-1">
             <button onClick={toggleSidebar}>
               <Hamburger toggled={sidebarOpen} toggle={setSidebarOpen} size={16} />
             </button>
@@ -209,7 +215,7 @@ useEffect(() => {
 
 
 
-     <section className="w-full min-h-[50vh] sm:min-h-[55vh] lg:min-h-screen flex justify-center items-center bg-[#1e1e1e]">
+     <section className="w-full min-h-[80vh] sm:min-h-[85vh] lg:min-h-screen flex justify-center items-center bg-[#1e1e1e]">
 
   <div className="text-center p-6 w-full max-w-5xl">
     <h1 className="text-xl md:text-3xl font-bold">Hey there, I'm Haruna Abdulazeez</h1>
@@ -222,19 +228,23 @@ useEffect(() => {
       <a href="https://x.com/Zeez_IV"
     target="blank"
     rel="noopener noreferrer">
-      <img src={twitter} alt="Twitter" className="h-5 w-5 transition duration-300 hover:scale-125" />
+      <img src={twitter} alt="Twitter" className="w-10 h-10 transition duration-300 hover:scale-125" />
       </a>
+
+      <a href="https://wa.me/+2348036401635" target="blank" rel="noopener noreferrer">
+            <img src={whatsApp} alt="WhatsApp" className="w-10 h-10 transition duration-300 hover:scale-125" />
+          </a>
 
       <a href="https://github.com/Zeez09"
     target="blank"
     rel="noopener noreferrer">
-      <img src={github} alt="GitHub" className="h-5 w-5 transition duration-300 hover:scale-125" />
+      <img src={github} alt="GitHub" className="w-10 h-10 transition duration-300 hover:scale-125" />
       </a>
 
       <a href="https://www.linkedin.com/in/haruna-abdulazeez/"
     target="blank"
     rel="noopener noreferrer">
-      <img src={linkedin} alt="LinkedIn" className="h-5 w-5 transition duration-300 hover:scale-125 hover:cursor-pointer" /></a>
+      <img src={linkedin} alt="LinkedIn" className="w-10 h-10 transition duration-300 hover:scale-125 hover:cursor-pointer" /></a>
     </div>
 
 <a
@@ -250,16 +260,16 @@ useEffect(() => {
 </section>
 
 <section id="portfolio" className="leading-12 ">
-<h1 className="text-2xl md:text-7xl font-bold mb-10">Portfolio</h1>
+<h1 className="text-2xl md:text-7xl font-bold mb-10 flex justify-center">Portfolio</h1>
   <Projects />
 </section>
 
 <section id="about">
 <div className="w-full px-4 py-12">
-  <h1 className="text-2xl md:text-7xl font-bold"> About</h1>
-  <div className="flex flex-col md:flex-row items-center justify-center gap-6 max-w-4xl mx-auto">
+  <h1 className="text-2xl md:text-7xl font-bold flex justify-center"> About</h1>
+  <div className="flex flex-col md:flex-row items-center justify-center gap-6 sm:max-w-4xl mx-auto">
     
-    <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left max-w-4xl mx-auto px-4">
+    <p className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left sm:max-w-4xl mx-auto px-4">
   I’m a passionate and innovative software developer dedicated to building intuitive and impactful web solutions. I transform ideas into user-focused products through clean code, creativity, and attention to detail.
 </p>
 
@@ -275,47 +285,16 @@ useEffect(() => {
 
 
   <section id="contact" className="leading-loose">
-  <div className="w-full px-4 py-12 leading-loose">
-  <h1 className="text-2xl md:text-7xl font-bold"> Say hello</h1>
-  <h3 className="text-2xl mt-5">
-    Have any project in mind? shoot me a message let's work
-  </h3>
+  
 
-  <div className="flex flex-col sm:flex-row justify-between items-center gap-10 sm:gap-20 mt-20 px-4 text-center sm:text-left">
-    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="blank" rel= "noopener noreferrer"> 
-    <h1 className="text-sm sm:text-base md:text-2xl lg:text-3xl text-gray-500 hover:text-white transition duration-300 break-words text-center md:text-left">
-  Harunaabdulazeez766@gmail.com
-</h1>
+  
 
-    </a>
+    <div className="flex flex-col justify-center items-center gap-10 mt-5 px-4 text-center">
+  <ContactForm />
 
-    <div className="flex flex-col sm:flex-row gap-5">
 
-    <a href="https://x.com/Zeez_IV"
-    target="blank"
-    rel="noopener noreferrer">
-    <img src={twitter} alt="" className="w-10 h-10 transition duration-300 hover:scale-125" />
-      </a>
-      <a href="https://wa.me/+2348036401635"
-    target="blank"
-    rel="noopener noreferrer">
-    <img src={whatsApp} alt="" className="w-10 h-10 transition duration-300 hover:scale-125" />
-    </a>
-
-    <a href="https://www.linkedin.com/in/haruna-abdulazeez/"
-    target="blank"
-    rel="noopener noreferrer">
-      <img src={linkedin} alt="" className="w-10 h-10 transition duration-300 hover:scale-125" />
-    </a>
-
-    <a href="https://github.com/Zeez09"
-    target="blank"
-    rel="noopener noreferrer">
-    <img src={github} alt="" className="w-10 h-10 transition duration-300 hover:scale-125" />
-    </a>
-
-  </div>
-  </div>
+  
+  
   
 
   </div>

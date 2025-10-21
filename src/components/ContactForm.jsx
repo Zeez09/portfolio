@@ -37,7 +37,7 @@ const ContactForm = () => {
       {/* Contact Form */}
       <form
         onSubmit={sendEmail}
-        className="w-full max-w-6xl flex flex-col items-center gap-5 p-8 bg-[#0b0b0b]/80 border border-violet-500/30 rounded-2xl shadow-[0_0_30px_5px_rgba(139,92,246,0.25)]"
+        className="w-full  flex flex-col items-center gap-5 p-8 bg-[#0b0b0b]/80 border border-violet-500/30 rounded-2xl shadow-[0_0_30px_5px_rgba(139,92,246,0.25)]"
       >
         {/* Name & Email */}
         <div className="flex flex-col sm:flex-row w-full justify-center gap-4">

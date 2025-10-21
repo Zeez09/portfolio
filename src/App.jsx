@@ -217,7 +217,7 @@ ${showNavbar ? 'opacity-100 visible scale-100' : 'opacity-0 invisible scale-95'}
 
      <section className="w-full min-h-[80vh] sm:min-h-[85vh] lg:min-h-screen flex justify-center items-center bg-[#1e1e1e]">
 
-  <div className="text-center p-6 w-full max-w-5xl">
+  <div className="text-center p-6 w-full max-w-6xl">
     <h1 className="text-xl md:text-3xl font-bold">Hey there, I'm Haruna Abdulazeez</h1>
     <h2 className="text-xl font-bold animate-pulse">{constantItem} {dynamicItems[currentItem]}</h2>
     <p className="text-base sm:text-lg text-gray-300">

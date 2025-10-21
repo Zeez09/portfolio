@@ -24,7 +24,7 @@ const ContactForm = () => {
   return (
     <section
       id="contact"
-      className="max-w-6xl flex flex-col justify-center items-center bg-[#1e1e1e] text-white px-4 py-16"
+      className="max-w-6xl flex flex-col justify-center items-center bg-[#1e1e1e] text-white"
     >
       {/* Heading */}
       <div className="text-center mb-12">

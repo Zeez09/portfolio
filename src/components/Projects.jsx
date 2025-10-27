@@ -47,7 +47,7 @@ const Projects = () => {
           {/* Scrollable Container */}
           <div
             ref={scrollRef}
-            className="flex gap-5 overflow-x-auto scroll-smooth no-scrollbar relative pb-2 snap-x snap-mandatory"
+            className="flex gap-5 overflow-x-auto scroll-smooth  relative pb-2 snap-x snap-mandatory"
           >
             {projects.map((project, index) => (
               <div

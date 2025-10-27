@@ -11,3 +11,29 @@ html {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;     /* Firefox */
 }
+
+::-webkit-scrollbar {
+  height: 8px; /* for horizontal scrollbars */
+  width: 8px;  /* for vertical scrollbars (in case you add one) */
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0b0b; /* dark background to blend with your site */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #8b5cf6, #a78bfa); /* violet gradient */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #9f7aea, #c4b5fd);
+}
+
+/* Firefox support */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #8b5cf6 #0b0b0b;
+}
+

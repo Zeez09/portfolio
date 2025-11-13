@@ -5,7 +5,7 @@ import Hamburger from "hamburger-react";
 import twitter from "./assets/images/icons8-twitter-30.png";
 import github from "./assets/images/icons8-github-logo-24.png";
 import linkedin from "./assets/images/icons8-linkedin-48.png";
-import Projects from "../src/components/Projects";
+import Projects from "../src/components/projects";
 import avatar from "./assets/images/medium-shot-anime-style-man-portrait.jpg";
 import whatsApp from "./assets/images/icons8-whatsapp-50.png";
 import ContactForm from "./components/ContactForm";

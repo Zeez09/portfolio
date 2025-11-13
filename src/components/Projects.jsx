@@ -19,14 +19,13 @@ const Projects = () => {
         
 
         <div className="relative">
-          {/* Gradient fades */}
-          <div className="absolute left-0 top-0 h-full w-12 bg-gradient-to-r from-[#0b0b0b] to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 h-full w-12 bg-gradient-to-l from-[#0b0b0b] to-transparent z-10 pointer-events-none"></div>
+          
 
           {/* Swiper */}
           <Swiper
             onSwiper={(swiper) => (swiperRef.current = swiper)}
             modules={[Navigation, Pagination, Autoplay]}
+            navigation={true}
             slidesPerView={1}
             spaceBetween={20}
             loop={true}
@@ -72,11 +71,11 @@ const Projects = () => {
 
           {/* Navigation buttons */}
           <ChevronLeft
-            className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-300 hover:text-violet-400 z-20 cursor-pointer"
+            className="absolute -left-10 top-1/2 -translate-y-1/2 text-gray-300 hover:text-violet-400 z-20 cursor-pointer hidden md:block"
             onClick={() => swiperRef.current?.slidePrev()}
           />
           <ChevronRight
-            className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-300 hover:text-violet-400 z-20 cursor-pointer"
+            className="absolute -right-10 top-1/2 -translate-y-1/2 text-gray-300 hover:text-violet-400 z-20 cursor-pointer hidden md:block"
             onClick={() => swiperRef.current?.slideNext()}
           />
         </div>

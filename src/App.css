@@ -60,3 +60,7 @@ html {
 }
 
 
+.buttons .swiper-button-next,
+.buttons .swiper-button-prev {
+  display: none; /* hides the default arrows */
+}

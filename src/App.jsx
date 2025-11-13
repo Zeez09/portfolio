@@ -168,7 +168,7 @@ const App = () => {
         )}
 
         {/* HERO SECTION */}
-        <section className="w-full min-h-[90vh] [380px]:min-h-[85vh] sm:min-h-screen flex justify-center items-center bg-[#1e1e1e] text-center">
+        <section className="w-full mt-30 flex justify-center items-center bg-[#1e1e1e] text-center">
           <div className="p-3 sm:p-6 w-full max-w-6xl">
             <h1 className="text-lg sm:text-3xl font-bold leading-snug">
               Hey there, I'm Haruna Abdulazeez
@@ -224,9 +224,9 @@ const App = () => {
 
         {/* PORTFOLIO */}
         <section id="portfolio" className="mt-16">
-          <h1 className="text-2xl sm:text-5xl font-bold mb-8 flex justify-center">
-            Portfolio
-          </h1>
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-10 bg-gradient-to-r from-violet-400 to-amber-300 bg-clip-text text-transparent">
+          My Projects
+        </h2>
           <Projects />
         </section>
 

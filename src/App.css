@@ -37,3 +37,26 @@ html {
   scrollbar-color: #8b5cf6 #0b0b0b;
 }
 
+/* to style swiper dots */
+
+/* Move pagination down */
+.buttons .swiper-pagination {
+  bottom: -40px !important;  /* moves bullets lower */
+}
+
+/* Style the bullets */
+.buttons .swiper-pagination-bullet {
+  background-color: #a78bfa; /* violet-400 */
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.buttons .swiper-pagination-bullet-active {
+  background-color: #fbbf24; /* amber-400 */
+  opacity: 0.5;
+  transform: scale(1.3);
+}
+
+

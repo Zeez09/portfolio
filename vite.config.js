@@ -3,9 +3,10 @@ import react from "@vitejs/plugin-react";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  base: process.env.VITE_BASE_PATH || "/", // <- automatically pick base path
   plugins: [react(), tailwindcss()],
   build: {
-    chunkSizeWarningLimit: 800, // optional
+    chunkSizeWarningLimit: 800,
     rollupOptions: {
       output: {
         manualChunks(id) {

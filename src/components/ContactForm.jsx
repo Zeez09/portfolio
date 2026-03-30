@@ -1,7 +1,19 @@
-import React from "react";
+import React, {useEffect, useRef } from "react";
 import emailjs from "emailjs-com";
+import  gsap  from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+
 
 const ContactForm = () => {
+  const formRef = useRef(null);
+
+
+
+
+
   const sendEmail = (e) => {
     e.preventDefault();
 

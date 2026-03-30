@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from "react";
 import projects from "../data/Projects";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { SiReact, SiJavascript, SiTailwindcss, SiTypescript, SiNextdotjs } from "react-icons";
+import { SiReact, SiJavascript, SiTailwindcss, SiTypescript, SiNextdotjs } from "react-icons/si";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 

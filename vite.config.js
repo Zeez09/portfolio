@@ -5,7 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   build: {
-    chunkSizeWarningLimit: 800,
+    chunkSizeWarningLimit: 800, // optional
     rollupOptions: {
       output: {
         manualChunks(id) {
@@ -13,8 +13,7 @@ export default defineConfig({
             if (id.includes("react")) return "react-vendor";
             if (id.includes("gsap")) return "gsap";
             if (id.includes("swiper")) return "swiper";
-            if (id.includes("react-icons") || id.includes("lucide-react"))
-              return "icons";
+            if (id.includes("react-icons") || id.includes("lucide-react")) return "icons";
             return "vendor";
           }
         },

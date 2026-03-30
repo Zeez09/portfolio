@@ -6,11 +6,12 @@ import twitter from "./assets/images/icons8-twitter-30.png";
 import github from "./assets/images/icons8-github-logo-24.png";
 import linkedin from "./assets/images/icons8-linkedin-48.png";
 import Projects from "./components/Projects";
-import avatar from "./assets/images/medium-shot-anime-style-man-portrait.jpg";
 import whatsApp from "./assets/images/icons8-whatsapp-50.png";
 import ContactForm from "./components/ContactForm";
 import gsap from "gsap";
 import Tech from "./components/Tech";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const App = () => {
   const [activeSection, setActiveSection] = useState("portfolio");
@@ -280,7 +281,10 @@ const App = () => {
               ref={downloadBtnRef}
               href="/Abdulazeez_Haruna_cv.pdf"
               download
-              className="download-btn bg-violet-600 text-white px-3 py-2 text-sm [380px]:px-4 [380px]:py-2.5 [380px]:text-base sm:px-6 sm:py-3 sm:text-base font-medium rounded-lg hover:bg-violet-700 transition-all duration-300 mt-4 inline-block text-center sm:w-auto"
+              className="download-btn bg-violet-600 text-white px-3 py-2 text-sm 
+              min-[380px]:px-4 min-[380px]:py-2.5 min-[380px]:text-base 
+              sm:px-6 sm:py-3 sm:text-base font-medium rounded-lg hover:bg-violet-700 
+              transition-all duration-300 mt-4 inline-block text-center sm:w-auto"   
             >
               📄 Download Resume
             </a>
@@ -296,7 +300,7 @@ const App = () => {
         </section>
 
         {/* ABOUT */}
-        <section id="about" className="mt-16">
+        <section ref={portfolioRef} id="about" className="mt-16">
           <div className="w-full px-3 py-8 sm:px-6">
             <h1 ref={titleRef}  className="text-2xl sm:text-5xl font-bold flex justify-center mb-8">About</h1>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 sm:max-w-4xl mx-auto">
@@ -306,7 +310,7 @@ const App = () => {
                 clean code, creativity, and attention to detail.
               </p>
               <img
-                src={avatar}
+                src="/favicon.webp"
                 alt="avatar"
                 className="w-32 h-32 sm:w-40 sm:h-40 rounded-full object-cover"
               />

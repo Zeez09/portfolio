@@ -11,14 +11,21 @@ import "swiper/css/pagination";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
 gsap.registerPlugin(ScrollTrigger);
+
+const techIcons = {
+  react: <SiReact className="text-blue-500" />,
+  javascript: <SiJavascript className="text-yellow-500" />,
+  tailwindcss: <SiTailwindcss className="text-teal-400" />,
+  typescript: <SiTypescript className="text-blue-600" />,
+  nextjs: <SiNextdotjs className="text-gray-300" />,
+};
 
 const Projects = () => {
   const swiperRef = useRef(null);
   const sectionRef = useRef(null);
 
-  // ✅ Entrance animation
+  // Entrance animation
   useEffect(() => {
     gsap.fromTo(
       sectionRef.current,
@@ -35,14 +42,6 @@ const Projects = () => {
       }
     );
   }, []);
-
-  const techIcons = {
-  react: <SiReact className="text-blue-500" />,
-  javascript: <SiJavascript className="text-yellow-500" />,
-  tailwindcss: <SiTailwindcss className="text-teal-400" />,
-  typescript: <SiTypescript className="text-blue-600" />,
-  nextjs: <SiNextdotjs className="text-gray-300" />,
-};
 
   return (
     <section
@@ -67,25 +66,18 @@ const Projects = () => {
             className="buttons"
           >
             {projects.map((project) => (
-              <SwiperSlide
-                key={project.id}
-                className="px-2 py-4 flex justify-center"
-              >
+              <SwiperSlide key={project.id} className="px-2 py-4 flex justify-center">
                 <div className="w-full max-w-xs sm:max-w-sm md:max-w-md bg-gradient-to-br from-zinc-900/90 to-zinc-800/60 rounded-xl border border-zinc-700/40 shadow-lg hover:shadow-violet-500/20 p-5 transition-all duration-500 hover:-translate-y-2 hover:border-violet-400/40">
                   <img
                     src={project.image}
                     alt={project.title}
                     className="w-full h-44 sm:h-48 md:h-52 object-cover rounded-lg mb-3 shadow-md"
                   />
-                  <h3 className="text-xl font-semibold mb-2 text-violet-300">
-                    {project.title}
-                  </h3>
-                  <p className="text-gray-400 mb-3 text-sm leading-relaxed">
-                    {project.description}
-                  </p>
+                  <h3 className="text-xl font-semibold mb-2 text-violet-300">{project.title}</h3>
+                  <p className="text-gray-400 mb-3 text-sm leading-relaxed">{project.description}</p>
                   <div className="flex gap-2 mb-4">
                     {project.tech.map((tech) => (
-                    <span key={tech}>{techIcons[tech]}</span>
+                      <span key={tech}>{techIcons[tech]}</span>
                     ))}
                   </div>
                   <a

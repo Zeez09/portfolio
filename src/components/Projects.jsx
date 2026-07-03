@@ -71,7 +71,7 @@ const Projects = () => {
                 key={project.id}
                 className="px-2 py-4 flex justify-center"
               >
-                <div className="w-full max-w-xs sm:max-w-sm md:max-w-md bg-gradient-to-br from-zinc-900/90 to-zinc-800/60 rounded-xl border border-zinc-700/40 shadow-lg hover:shadow-violet-500/20 p-5 transition-all duration-500 hover:-translate-y-2 hover:border-violet-400/40">
+                <div className="w-full max-w-xs sm:max-w-sm md:max-w-md bg-linear-to-br from-zinc-900/90 to-zinc-800/60 rounded-xl border border-zinc-700/40 shadow-lg hover:shadow-violet-500/20 p-5 transition-all duration-500 hover:-translate-y-2 hover:border-violet-400/40">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -92,7 +92,7 @@ const Projects = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-gradient-to-r from-amber-200 to-amber-400 text-black px-4 py-1.5 rounded-lg font-semibold shadow-md hover:shadow-amber-300/50 hover:scale-105 transition-transform text-sm"
+                    className="inline-block bg-linear-to-r from-amber-200 to-amber-400 text-black px-4 py-1.5 rounded-lg font-semibold shadow-md hover:shadow-amber-300/50 hover:scale-105 transition-transform text-sm"
                   >
                     Live Preview
                   </a>

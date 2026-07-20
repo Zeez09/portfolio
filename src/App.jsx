@@ -141,7 +141,7 @@ const App = () => {
         {/* NAVBAR */}
         <NavBar activeSection={activeSection} showNavbar={showNavbar} />
 
-        
+
         {/* HERO SECTION */}
         <section className="w-full mt-30 flex justify-center items-center bg-[#1e1e1e] text-center">
           <div className="p-3 sm:p-6 w-full max-w-6xl">
@@ -183,7 +183,7 @@ const App = () => {
             {/* Responsive Download Button */}
             <a
               ref={downloadBtnRef}
-              href="/Abdulazeez_Haruna_cv.pdf"
+              href="/Haruna_Abdulazeez_CV.pdf"
               download
               className="download-btn bg-violet-600 text-white px-3 py-2 text-sm 
               min-[380px]:px-4 min-[380px]:py-2.5 min-[380px]:text-base 
@@ -205,7 +205,7 @@ const App = () => {
 
         {/* ABOUT */}
         <section ref={portfolioRef} id="about" className="mt-16">
-          <div className="w-full px-3 py-8 sm:px-6">
+          <div className="w-full px-3 py-6 sm:px-6">
             <h1 ref={titleRef}  className="text-2xl sm:text-5xl font-bold flex justify-center mb-8">About</h1>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6 sm:max-w-4xl mx-auto">
               <p ref={descriptionRef} className="text-sm sm:text-base md:text-lg text-gray-300 leading-relaxed text-center md:text-left px-2">
@@ -228,7 +228,7 @@ const App = () => {
         </div>
 
         {/* CONTACT */}
-        <section id="contact" className="mt-16">
+        <section id="contact" className="mt-4">
           <div className="flex flex-col justify-center items-center gap-10 px-3 text-center">
             <ContactForm />
           </div>

@@ -1,4 +1,4 @@
-import { image } from "framer-motion/client";
+
 
 
 
@@ -9,10 +9,11 @@ const projects = [
     {
         id: "1",
         image: "/images/Screenshot (282).png",
-        title: "54grid",
+        title: "method™",
         description: "A multi-page website designed to load quickly, look professional, and provide custom features that meet real business requirements.",
-        link: "https://grid.54ruum.com/",
-        tech: ["react", "tailwindcss", "typescript"]
+        link: "https://method.ruum.africa/",
+        tech: ["react", "tailwindcss", "typescript", "vite", "sanity"],
+        category: "collaborative"
     },
 
     {
@@ -21,7 +22,8 @@ const projects = [
         title: "Delish",
         description: "A contemporary website featuring online food ordering and an integrated blog, optimized for speed and usability.",
         link: "https://delish-five.vercel.app/",
-        tech: ["react", "tailwindcss", "javascript"]
+        tech: ["react", "tailwindcss", "javascript", "vite"],
+        category: "personal"
     },
     {
         
@@ -30,7 +32,8 @@ const projects = [
         title: "sneakeefy",
         description: "A modern e-commerce web app designed for fast, intuitive shopping with essential features and smooth performance.",
         link: "https://sneakeefy.netlify.app/",
-        tech: ["react", "tailwindcss", "javascript"]
+        tech: ["react", "tailwindcss", "javascript", "vite"],
+        category: "personal"
     },
     {
         id: "4",
@@ -38,7 +41,8 @@ const projects = [
         title: "dessert-court",
         description: "A food ordering web app designed for fast, seamless online ordering, featuring menu management and a smooth user experience.",
         link: "https://dessert-court.netlify.app/",
-        tech: ["react", "tailwindcss", "javascript"]
+        tech: ["react", "tailwindcss", "javascript", "vite"],
+        category: "personal"
     },
     {
         id: "5",
@@ -46,7 +50,8 @@ const projects = [
         title: "MQ-flight-booking-app",
         description: "An interactive flight booking platform built for speed, convenience, and a seamless customer experience.",
         link: "https://mq-flight-booking-app.vercel.app/",
-        tech: ["react", "tailwindcss", "javascript"]
+        tech: ["react", "tailwindcss", "javascript", "vite"],
+        category: "personal"
     },
     {
         id: "6",
@@ -54,7 +59,8 @@ const projects = [
         title: "loop-studios",
         description: "A simple yet effective landing page designed for responsiveness, speed, and engaging user experience.",
         link: "https://loop-studios-plum-kappa.vercel.app/",
-        tech: ["react", "tailwindcss", "javascript"]
+        tech: ["react", "tailwindcss", "javascript", "vite"],
+        category: "personal"
     },
     {
         id: "7",
@@ -62,7 +68,8 @@ const projects = [
         title: "zedtunes",
         description: "A modern web app for playing and managing music, featuring responsive design and seamless audio playback.",
         link: "https://zedtunes.netlify.app/",
-        tech: ["react", "tailwindcss", "javascript"]
+        tech: ["react", "tailwindcss", "javascript", "vite"],
+        category: "personal"
     },
 
     {
@@ -71,10 +78,31 @@ const projects = [
         title: "finsweet",
         description: "A fast, multi-page static website built for a clean, professional presentation with a smooth user experience.",
         link: "https://finsweet-navy.vercel.app/",
-        tech: ["react", "tailwindcss", "javascript"]
+        tech: ["react", "tailwindcss", "javascript", "vite"],
+        category: "personal"
+
 
     },
-    
+
+    {
+        id: "9",
+        image: "/images/Screenshot (379).png",
+        title: "Ruum Africa",
+        description: "A multi-platform digital ecosystem connecting African creatives, media, technology, and commerce through innovative solutions built to support and showcase Africa's creative industry.",
+        link: "https://www.ruum.africa/",
+        tech: ["react", "tailwindcss", "typescript", "vite"],
+        category: "collaborative"
+    },
+
+    {
+        id: "10",
+        image: "/images/Screenshot (381).png",
+        title: "54Ruum",
+        description: "A pan-African creative community connecting photographers, filmmakers, and visual artists through a platform designed to showcase their work, foster collaboration, and create opportunities for African visual storytellers.",
+        link: "https://www.54ruum.com/",
+        tech: ["react", "tailwindcss", "typescript", "vite"],
+        category: "collaborative"
+    }
 ];
 
 export default projects;

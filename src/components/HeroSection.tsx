@@ -5,6 +5,8 @@ import twitter from "../assets/images/icons8-twitter-30.png";
 import github from "../assets/images/icons8-github-logo-24.png";
 import linkedin from "../assets/images/icons8-linkedin-48.png";
 import whatsApp from "../assets/images/icons8-whatsapp-50.png";
+import Chevron from "./chevron";
+
 
 const Hero = () => {
   const constantItem = "I am";
@@ -104,7 +106,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="w-full flex justify-center items-center bg-[#1e1e1e] text-center mt-30 md:mt-0 h-auto md:h-screen">
+    <section className="w-full flex flex-col justify-center items-center bg-[#1e1e1e] text-center mt-30 md:mt-0 h-auto md:h-screen">
       <div className="p-3 sm:p-6 w-full max-w-6xl">
         <h1
           ref={titleRef}
@@ -161,6 +163,7 @@ const Hero = () => {
           📄 Download Resume
         </a>
       </div>
+      <Chevron />
     </section>
   );
 };
